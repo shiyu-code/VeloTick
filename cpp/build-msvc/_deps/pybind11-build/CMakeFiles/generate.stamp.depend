@@ -1,0 +1,20 @@
+# CMake generation dependency list for this directory.
+C:/Strawberry/c/share/cmake-3.29/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CMakeDependentOption.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CMakeParseArguments.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/FindPackageMessage.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/FindPythonInterp.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/GNUInstallDirs.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/pybind11-src/CMakeLists.txt
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/pybind11-src/tools/FindPythonLibsNew.cmake
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/pybind11-src/tools/JoinPaths.cmake
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/pybind11-src/tools/pybind11Common.cmake
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/pybind11-src/tools/pybind11Tools.cmake

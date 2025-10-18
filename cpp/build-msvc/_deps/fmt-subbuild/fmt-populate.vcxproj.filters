@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\f360c28c5405ca664af6849220ea691b\fmt-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\f360c28c5405ca664af6849220ea691b\fmt-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\f360c28c5405ca664af6849220ea691b\fmt-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\f360c28c5405ca664af6849220ea691b\fmt-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\f360c28c5405ca664af6849220ea691b\fmt-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\f360c28c5405ca664af6849220ea691b\fmt-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\f360c28c5405ca664af6849220ea691b\fmt-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\f360c28c5405ca664af6849220ea691b\fmt-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\556264de39ba8d2fc0e3d93b615c33c2\fmt-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\f4d7ea939c16582cc853ebf78c1b97ae\fmt-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-subbuild\CMakeFiles\fmt-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7EEB54E9-3262-3DAF-9118-AAC2012E20E0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

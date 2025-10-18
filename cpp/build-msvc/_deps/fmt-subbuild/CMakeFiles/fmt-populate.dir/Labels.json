@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/fmt-populate"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/f4d7ea939c16582cc853ebf78c1b97ae/fmt-populate.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/556264de39ba8d2fc0e3d93b615c33c2/fmt-populate-complete.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/f360c28c5405ca664af6849220ea691b/fmt-populate-build.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/f360c28c5405ca664af6849220ea691b/fmt-populate-configure.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/f360c28c5405ca664af6849220ea691b/fmt-populate-download.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/f360c28c5405ca664af6849220ea691b/fmt-populate-install.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/f360c28c5405ca664af6849220ea691b/fmt-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/f360c28c5405ca664af6849220ea691b/fmt-populate-patch.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/f360c28c5405ca664af6849220ea691b/fmt-populate-test.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/f360c28c5405ca664af6849220ea691b/fmt-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fmt-populate"
+		],
+		"name" : "fmt-populate"
+	}
+}

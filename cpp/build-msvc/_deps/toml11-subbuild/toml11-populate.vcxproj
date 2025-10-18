@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E5817F4D-E6C1-3D9B-9EB1-F15558113285}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>toml11-populate</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\0c7a2b0c2b63e937d382fd07ccb7c0ec\toml11-populate-mkdir.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'toml11-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -Dcfgdir=/Debug -P E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/tmp/toml11-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/src/toml11-populate-stamp/Debug/toml11-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\0c7a2b0c2b63e937d382fd07ccb7c0ec\toml11-populate-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'toml11-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -P E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/tmp/toml11-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/src/toml11-populate-stamp/Debug/toml11-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\toml11-populate-gitinfo.txt;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\0c7a2b0c2b63e937d382fd07ccb7c0ec\toml11-populate-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'toml11-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -Dcan_fetch=YES -P E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/tmp/toml11-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\tmp\toml11-populate-gitupdate.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\toml11-populate-update-info.txt;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\0c7a2b0c2b63e937d382fd07ccb7c0ec\toml11-populate-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'toml11-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/src/toml11-populate-stamp/Debug/toml11-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\toml11-populate-patch-info.txt;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\0c7a2b0c2b63e937d382fd07ccb7c0ec\toml11-populate-configure.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'toml11-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/src/toml11-populate-stamp/Debug/toml11-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\tmp\toml11-populate-cfgcmd.txt;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\0c7a2b0c2b63e937d382fd07ccb7c0ec\toml11-populate-build.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'toml11-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/src/toml11-populate-stamp/Debug/toml11-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\0c7a2b0c2b63e937d382fd07ccb7c0ec\toml11-populate-install.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'toml11-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/src/toml11-populate-stamp/Debug/toml11-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\0c7a2b0c2b63e937d382fd07ccb7c0ec\toml11-populate-test.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'toml11-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/src/toml11-populate-stamp/Debug/toml11-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\e3ad0bd555731d0b98d58ff49dce2189\toml11-populate-complete.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'toml11-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -E make_directory E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/CMakeFiles/Debug/toml11-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/toml11-populate-prefix/src/toml11-populate-stamp/Debug/toml11-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-install;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-mkdir;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-download;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-update;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-patch;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-configure;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-build;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\src\toml11-populate-stamp\Debug\toml11-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\Debug\toml11-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\77d5fb232b4c1596471ad8b80a236be9\toml11-populate.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\Debug\toml11-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\toml11-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -SE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild -BE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild --check-stamp-file E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/toml11-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Strawberry\c\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\gitclone.cmake.in;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\gitupdate.cmake.in;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\3.29.2\CMakeSystem.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\toml11-populate-prefix\tmp\toml11-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\CMakeFiles\toml11-populate">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{BAFA3983-C50D-3F22-870D-C88949C285B0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

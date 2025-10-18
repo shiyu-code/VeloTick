@@ -1,0 +1,14 @@
+# Target labels
+ libuv-populate
+# Source files and their labels
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/CMakeFiles/libuv-populate
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/CMakeFiles/libuv-populate.rule
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/CMakeFiles/libuv-populate-complete.rule
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/libuv-populate-build.rule
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/libuv-populate-configure.rule
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/libuv-populate-download.rule
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/libuv-populate-install.rule
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/libuv-populate-mkdir.rule
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/libuv-populate-patch.rule
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/libuv-populate-test.rule
+E:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/libuv-populate-update.rule

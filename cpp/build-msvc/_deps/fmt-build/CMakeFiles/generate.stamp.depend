@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+C:/Strawberry/c/share/cmake-3.29/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Strawberry/c/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CMakeParseArguments.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/GNUInstallDirs.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-src/CMakeLists.txt
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-src/support/cmake/JoinPaths.cmake
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-src/support/cmake/fmt-config.cmake.in
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-src/support/cmake/fmt.pc.in

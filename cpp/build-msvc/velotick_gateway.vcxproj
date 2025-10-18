@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E16D78D2-A9DA-3FEB-A9F0-79BE7930E8DA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>velotick_gateway</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">velotick_gateway.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">velotick_gateway</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">velotick_gateway.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">velotick_gateway</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">velotick_gateway.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">velotick_gateway</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">velotick_gateway.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">velotick_gateway</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Strawberry/c/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;VELO_NO_PYTHON;LIBUS_USE_OPENSSL;USING_UV_SHARED=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;VELO_NO_PYTHON;LIBUS_USE_OPENSSL;USING_UV_SHARED=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;C:\Strawberry\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;C:\Strawberry\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>_deps\fmt-build\Debug\fmtd.lib;Debug\usockets.lib;C:\Strawberry\c\lib\libssl.a;C:\Strawberry\c\lib\libz.a;_deps\libuv-build\Debug\uv.lib;psapi.lib;user32.lib;advapi32.lib;iphlpapi.lib;userenv.lib;dbghelp.lib;ole32.lib;shell32.lib;C:\Strawberry\c\lib\libcrypto.a;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/Debug/velotick_gateway.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/Debug/velotick_gateway.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Strawberry/c/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VELO_NO_PYTHON;LIBUS_USE_OPENSSL;USING_UV_SHARED=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VELO_NO_PYTHON;LIBUS_USE_OPENSSL;USING_UV_SHARED=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;C:\Strawberry\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;C:\Strawberry\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>_deps\fmt-build\Release\fmt.lib;Release\usockets.lib;C:\Strawberry\c\lib\libssl.a;C:\Strawberry\c\lib\libz.a;_deps\libuv-build\Release\uv.lib;psapi.lib;user32.lib;advapi32.lib;iphlpapi.lib;userenv.lib;dbghelp.lib;ole32.lib;shell32.lib;C:\Strawberry\c\lib\libcrypto.a;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/Release/velotick_gateway.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/Release/velotick_gateway.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Strawberry/c/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VELO_NO_PYTHON;LIBUS_USE_OPENSSL;USING_UV_SHARED=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VELO_NO_PYTHON;LIBUS_USE_OPENSSL;USING_UV_SHARED=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;C:\Strawberry\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;C:\Strawberry\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>_deps\fmt-build\MinSizeRel\fmt.lib;MinSizeRel\usockets.lib;C:\Strawberry\c\lib\libssl.a;C:\Strawberry\c\lib\libz.a;_deps\libuv-build\MinSizeRel\uv.lib;psapi.lib;user32.lib;advapi32.lib;iphlpapi.lib;userenv.lib;dbghelp.lib;ole32.lib;shell32.lib;C:\Strawberry\c\lib\libcrypto.a;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/MinSizeRel/velotick_gateway.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/MinSizeRel/velotick_gateway.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Strawberry/c/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VELO_NO_PYTHON;LIBUS_USE_OPENSSL;USING_UV_SHARED=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VELO_NO_PYTHON;LIBUS_USE_OPENSSL;USING_UV_SHARED=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;C:\Strawberry\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\05GitProject\VeloTick\VeloTick\cpp\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\toml11-src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-src\include;C:\Strawberry\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>_deps\fmt-build\RelWithDebInfo\fmt.lib;RelWithDebInfo\usockets.lib;C:\Strawberry\c\lib\libssl.a;C:\Strawberry\c\lib\libz.a;_deps\libuv-build\RelWithDebInfo\uv.lib;psapi.lib;user32.lib;advapi32.lib;iphlpapi.lib;userenv.lib;dbghelp.lib;ole32.lib;shell32.lib;C:\Strawberry\c\lib\libcrypto.a;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/RelWithDebInfo/velotick_gateway.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/RelWithDebInfo/velotick_gateway.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/05GitProject/VeloTick/VeloTick/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -SE:/05GitProject/VeloTick/VeloTick/cpp -BE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc --check-stamp-file E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FetchContent.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FetchContent\CMakeLists.cmake.in;C:\Strawberry\c\share\cmake-3.29\Modules\FindGit.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindOpenSSL.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindZLIB.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeCCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/05GitProject/VeloTick/VeloTick/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -SE:/05GitProject/VeloTick/VeloTick/cpp -BE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc --check-stamp-file E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FetchContent.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FetchContent\CMakeLists.cmake.in;C:\Strawberry\c\share\cmake-3.29\Modules\FindGit.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindOpenSSL.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindZLIB.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeCCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/05GitProject/VeloTick/VeloTick/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -SE:/05GitProject/VeloTick/VeloTick/cpp -BE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc --check-stamp-file E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FetchContent.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FetchContent\CMakeLists.cmake.in;C:\Strawberry\c\share\cmake-3.29\Modules\FindGit.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindOpenSSL.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindZLIB.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeCCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/05GitProject/VeloTick/VeloTick/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -SE:/05GitProject/VeloTick/VeloTick/cpp -BE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc --check-stamp-file E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FetchContent.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FetchContent\CMakeLists.cmake.in;C:\Strawberry\c\share\cmake-3.29\Modules\FindGit.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindOpenSSL.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindZLIB.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeCCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\src\main.cpp" />
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\src\md_engine.cpp" />
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\src\tcp_server.cpp" />
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\src\py_bridge.cpp" />
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\src\globals.cpp" />
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\src\ctp_engine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\ZERO_CHECK.vcxproj">
+      <Project>{4C3E71B2-3F3E-3BD4-8C98-33D02F19AB8B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-build\fmt.vcxproj">
+      <Project>{40F504BA-81F2-3F73-8F40-279568CE51E4}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\usockets.vcxproj">
+      <Project>{2610EEAC-B39B-325C-9BD9-A5A6FE6BB6D7}</Project>
+      <Name>usockets</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\libuv-build\uv.vcxproj">
+      <Project>{FDFD4237-5249-3CF6-8653-CE2CD8C80241}</Project>
+      <Name>uv</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

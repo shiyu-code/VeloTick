@@ -1,0 +1,10 @@
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\PYBIND11-SUBBUILD\CMAKEFILES\009CBF4B228DA3BB2E5BC16BA51886C6\GENERATE.STAMP.RULE
+setlocal
+C:\Strawberry\c\bin\cmake.exe -SE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/pybind11-subbuild -BE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/pybind11-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/pybind11-subbuild/pybind11-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

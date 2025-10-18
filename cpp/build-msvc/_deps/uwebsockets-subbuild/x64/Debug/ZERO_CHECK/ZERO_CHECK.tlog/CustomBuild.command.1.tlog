@@ -1,0 +1,10 @@
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\UWEBSOCKETS-SUBBUILD\CMAKEFILES\34F96700C8DBE6AA6981E29FF329B5FD\GENERATE.STAMP.RULE
+setlocal
+C:\Strawberry\c\bin\cmake.exe -SE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild -BE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/uwebsockets-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

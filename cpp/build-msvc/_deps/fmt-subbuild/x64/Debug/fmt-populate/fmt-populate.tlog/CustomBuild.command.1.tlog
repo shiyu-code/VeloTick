@@ -1,0 +1,150 @@
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\F360C28C5405CA664AF6849220EA691B\FMT-POPULATE-MKDIR.RULE
+setlocal
+C:\Strawberry\c\bin\cmake.exe -Dcfgdir=/Debug -P E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/tmp/fmt-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/Debug/fmt-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\F360C28C5405CA664AF6849220EA691B\FMT-POPULATE-DOWNLOAD.RULE
+setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -P E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/tmp/fmt-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/Debug/fmt-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\F360C28C5405CA664AF6849220EA691B\FMT-POPULATE-UPDATE.RULE
+setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -Dcan_fetch=YES -P E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/tmp/fmt-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\F360C28C5405CA664AF6849220EA691B\FMT-POPULATE-PATCH.RULE
+setlocal
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/Debug/fmt-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\F360C28C5405CA664AF6849220EA691B\FMT-POPULATE-CONFIGURE.RULE
+setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/Debug/fmt-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\F360C28C5405CA664AF6849220EA691B\FMT-POPULATE-BUILD.RULE
+setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/Debug/fmt-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\F360C28C5405CA664AF6849220EA691B\FMT-POPULATE-INSTALL.RULE
+setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/Debug/fmt-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\F360C28C5405CA664AF6849220EA691B\FMT-POPULATE-TEST.RULE
+setlocal
+cd E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/Debug/fmt-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\556264DE39BA8D2FC0E3D93B615C33C2\FMT-POPULATE-COMPLETE.RULE
+setlocal
+C:\Strawberry\c\bin\cmake.exe -E make_directory E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/Debug/fmt-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Strawberry\c\bin\cmake.exe -E touch E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/Debug/fmt-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKEFILES\F4D7EA939C16582CC853EBF78C1B97AE\FMT-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\05GITPROJECT\VELOTICK\VELOTICK\CPP\BUILD-MSVC\_DEPS\FMT-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\Strawberry\c\bin\cmake.exe -SE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild -BE:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild --check-stamp-file E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/fmt-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

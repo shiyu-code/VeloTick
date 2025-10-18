@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\src\format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\src\os.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\args.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\chrono.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\compile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\format-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\os.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\ostream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\printf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\ranges.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\std.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\include\fmt\xchar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\README.rst" />
+    <None Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\fmt-src\ChangeLog.rst" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{638CDE7E-892A-3B52-8DE0-26807D742A4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{646F57C3-C7FC-3E3A-A2C4-0368C6F0823D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

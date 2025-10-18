@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>VeloTick Live v2</title>
+  <link rel="stylesheet" href="/styles.css?v=20251019-1" />
+</head>
+<body>
+  <div id="status" class="status-bad"><span class="dot"></span><span class="text">Connecting...</span></div>
+  <div id="metrics">
+    <span id="rate" class="badge">Rate: 0 tps</span>
+    <span id="srvRate" class="badge">Srv: 0 tps</span>
+    <span id="uptime" class="badge">Uptime: 0s</span>
+    <span id="version" class="badge">SrvVer: -</span>
+    <span id="clients" class="badge">Clients: 0</span>
+    <span id="buffers" class="badge">Raw: 0 | Clean: 0</span>
+    <span id="lastUpdate" class="badge">Last: -</span>
+    <span id="latency" class="badge">Delay: n/a</span>
+  </div>
+  <div id="ctrls">
+    <label><input type="checkbox" id="pause" /> Pause live</label>
+    <label>Filter: <input type="text" id="filter" placeholder="e.g. RB" /></label>
+    <label><input type="checkbox" id="auto" /> Auto refresh (2s)</label>
+    <button id="refresh">Refresh Latest</button>
+  </div>
+  <div id="chartPanel">
+    <div class="chart-controls">
+      <label>Chart instrument:
+        <select id="chartInst"></select>
+      </label>
+      <span id="chartInfo" class="badge">Points: 0</span>
+    </div>
+    <canvas id="chartCanvas" width="900" height="220"></canvas>
+  </div>
+  <div id="klinePanel">
+    <div class="chart-controls">
+      <label>K instrument:
+        <select id="kInst"></select>
+      </label>
+      <label>Timeframe:
+        <select id="kTf">
+          <option value="1000">1s</option>
+          <option value="5000">5s</option>
+          <option value="15000">15s</option>
+          <option value="60000">1m</option>
+          <option value="300000">5m</option>
+          <option value="900000">15m</option>
+          <option value="3600000">1h</option>
+        </select>
+      </label>
+      <span id="kInfo" class="badge">Bars: 0</span>
+      <label><input type="checkbox" id="kShowGrid" checked> Grid</label>
+      <label><input type="checkbox" id="kShowVol" checked> Volume</label>
+      <label><input type="checkbox" id="kShowTo" checked> Turnover</label>
+      <label><input type="checkbox" id="kShowMA5" checked> MA5</label>
+      <label><input type="checkbox" id="kShowMA10"> MA10</label>
+      <label><input type="checkbox" id="kFollow" checked> Follow</label>
+    </div>
+    <div class="kline-wrap">
+      <canvas id="kCanvas" width="900" height="260"></canvas>
+      <div id="kTooltip"></div>
+    </div>
+  </div>
+  <table id="latestTable">
+    <thead>
+      <tr>
+        <th data-key="t">Datetime</th>
+        <th data-key="i">Instrument</th>
+        <th data-key="p">Last Price</th>
+        <th data-key="bp">Bid Price</th>
+        <th data-key="ap">Ask Price</th>
+        <th data-key="bv">Bid Volume</th>
+        <th data-key="av">Ask Volume</th>
+        <th data-key="v">Volume</th>
+        <th data-key="to">Turnover</th>
+        <th data-key="oi">Open Interest</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div id="log"></div>
+  <script src="/app.js?v=20251019-8"></script>
+</body>
+</html>

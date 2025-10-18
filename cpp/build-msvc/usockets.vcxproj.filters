@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\loop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\socket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\udp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\eventing\libuv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\bsd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\crypto\openssl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\crypto\sni_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\05GitProject\VeloTick\VeloTick\cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{646F57C3-C7FC-3E3A-A2C4-0368C6F0823D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,446 @@
+[
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\fs-poll.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\fs-poll.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\fs-poll.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\fs-poll.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\idna.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\idna.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\idna.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\idna.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\inet.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\inet.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\inet.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\inet.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\random.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\random.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\random.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\random.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\strscpy.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\strscpy.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\strscpy.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\strscpy.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\strtok.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\strtok.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\strtok.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\strtok.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\thread-common.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\thread-common.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\thread-common.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\thread-common.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\threadpool.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\threadpool.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\threadpool.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\threadpool.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\timer.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\timer.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\timer.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\timer.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\uv-common.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\uv-common.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\uv-common.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\uv-common.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\uv-data-getter-setters.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\uv-data-getter-setters.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\uv-data-getter-setters.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\uv-data-getter-setters.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\version.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\version.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\version.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\version.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\async.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\async.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\async.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\async.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\core.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\core.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\core.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\core.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\detect-wakeup.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\detect-wakeup.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\detect-wakeup.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\detect-wakeup.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\dl.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\dl.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\dl.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\dl.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\error.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\error.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\error.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\error.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\fs.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\fs.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\fs.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\fs.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\fs-event.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\fs-event.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\fs-event.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\fs-event.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\getaddrinfo.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\getaddrinfo.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\getaddrinfo.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\getaddrinfo.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\getnameinfo.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\getnameinfo.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\getnameinfo.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\getnameinfo.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\handle.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\handle.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\handle.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\handle.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\loop-watcher.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\loop-watcher.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\loop-watcher.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\loop-watcher.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\pipe.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\pipe.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\pipe.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\pipe.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\thread.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\thread.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\thread.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\thread.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\poll.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\poll.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\poll.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\poll.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\process.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\process.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\process.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\process.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\process-stdio.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\process-stdio.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\process-stdio.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\process-stdio.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\signal.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\signal.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\signal.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\signal.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\snprintf.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\snprintf.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\snprintf.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\snprintf.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\stream.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\stream.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\stream.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\stream.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\tcp.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\tcp.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\tcp.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\tcp.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\tty.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\tty.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\tty.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\tty.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\udp.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\udp.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\udp.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\udp.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\util.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\util.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\util.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\util.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\winapi.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\winapi.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\winapi.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\winapi.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DBUILDING_UV_SHARED=1 -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -Duv_EXPORTS -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\winsock.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\winsock.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\winsock.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv.dir\\src\\win\\winsock.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\fs-poll.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\fs-poll.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\fs-poll.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\fs-poll.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\idna.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\idna.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\idna.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\idna.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\inet.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\inet.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\inet.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\inet.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\random.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\random.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\random.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\random.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\strscpy.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\strscpy.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\strscpy.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\strscpy.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\strtok.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\strtok.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\strtok.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\strtok.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\thread-common.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\thread-common.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\thread-common.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\thread-common.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\threadpool.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\threadpool.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\threadpool.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\threadpool.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\timer.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\timer.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\timer.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\timer.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\uv-common.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\uv-common.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\uv-common.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\uv-common.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\uv-data-getter-setters.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\uv-data-getter-setters.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\uv-data-getter-setters.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\uv-data-getter-setters.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\version.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\version.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\version.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\version.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\async.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\async.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\async.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\async.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\core.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\core.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\core.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\core.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\detect-wakeup.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\detect-wakeup.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\detect-wakeup.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\detect-wakeup.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\dl.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\dl.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\dl.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\dl.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\error.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\error.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\error.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\error.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\fs.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\fs.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\fs.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\fs.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\fs-event.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\fs-event.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\fs-event.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\fs-event.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\getaddrinfo.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\getaddrinfo.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\getaddrinfo.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\getaddrinfo.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\getnameinfo.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\getnameinfo.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\getnameinfo.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\getnameinfo.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\handle.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\handle.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\handle.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\handle.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\loop-watcher.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\loop-watcher.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\loop-watcher.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\loop-watcher.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\pipe.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\pipe.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\pipe.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\pipe.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\thread.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\thread.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\thread.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\thread.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\poll.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\poll.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\poll.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\poll.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\process.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\process.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\process.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\process.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\process-stdio.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\process-stdio.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\process-stdio.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\process-stdio.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\signal.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\signal.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\signal.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\signal.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\snprintf.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\snprintf.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\snprintf.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\snprintf.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\stream.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\stream.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\stream.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\stream.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\tcp.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\tcp.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\tcp.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\tcp.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\tty.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\tty.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\tty.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\tty.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\udp.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\udp.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\udp.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\udp.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\util.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\util.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\util.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\util.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\winapi.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\winapi.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\winapi.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\winapi.c.obj"
+},
+{
+  "directory": "E:/05GitProject/VeloTick/VeloTick/cpp/build",
+  "command": "C:\\Strawberry\\c\\bin\\gcc.exe -DWIN32_LEAN_AND_MEAN -D_CRT_DECLARE_NONSTDC_NAMES=0 -D_WIN32_WINNT=0x0602 -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/include -IE:/05GitProject/VeloTick/VeloTick/cpp/build/_deps/libuv-src/src -O3 -DNDEBUG -std=gnu90 -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -o _deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\winsock.c.obj -c E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\winsock.c",
+  "file": "E:\\05GitProject\\VeloTick\\VeloTick\\cpp\\build\\_deps\\libuv-src\\src\\win\\winsock.c",
+  "output": "_deps\\libuv-build\\CMakeFiles\\uv_a.dir\\src\\win\\winsock.c.obj"
+}
+]

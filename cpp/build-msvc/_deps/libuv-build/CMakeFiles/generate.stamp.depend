@@ -1,0 +1,16 @@
+# CMake generation dependency list for this directory.
+C:/Strawberry/c/share/cmake-3.29/Modules/CMakeDependentOption.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CTest.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CTestTargets.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CTestUseLaunchers.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CheckCCompilerFlag.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/DartConfiguration.tcl.in
+C:/Strawberry/c/share/cmake-3.29/Modules/GNUInstallDirs.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake
+C:/Strawberry/c/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-src/CMakeLists.txt
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-src/libuv-static.pc.in
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-src/libuv.pc.in

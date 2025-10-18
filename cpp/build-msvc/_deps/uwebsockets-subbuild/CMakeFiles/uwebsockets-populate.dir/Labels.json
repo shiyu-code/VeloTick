@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/uwebsockets-populate"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/34f96700c8dbe6aa6981e29ff329b5fd/uwebsockets-populate.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/20079399186c1ca7c7211882bbbc32bf/uwebsockets-populate-complete.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/2d449e34627eb713b11abe2715294abb/uwebsockets-populate-build.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/2d449e34627eb713b11abe2715294abb/uwebsockets-populate-configure.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/2d449e34627eb713b11abe2715294abb/uwebsockets-populate-download.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/2d449e34627eb713b11abe2715294abb/uwebsockets-populate-install.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/2d449e34627eb713b11abe2715294abb/uwebsockets-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/2d449e34627eb713b11abe2715294abb/uwebsockets-populate-patch.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/2d449e34627eb713b11abe2715294abb/uwebsockets-populate-test.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/2d449e34627eb713b11abe2715294abb/uwebsockets-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"uwebsockets-populate"
+		],
+		"name" : "uwebsockets-populate"
+	}
+}

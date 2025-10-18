@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/libuv-populate"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/b0897e219b36cddf0b1aec36477c82c5/libuv-populate.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/9ded650b607f3c812e23a6cf8e195067/libuv-populate-complete.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/2443b5728422650a8507492f3295f430/libuv-populate-build.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/2443b5728422650a8507492f3295f430/libuv-populate-configure.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/2443b5728422650a8507492f3295f430/libuv-populate-download.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/2443b5728422650a8507492f3295f430/libuv-populate-install.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/2443b5728422650a8507492f3295f430/libuv-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/2443b5728422650a8507492f3295f430/libuv-populate-patch.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/2443b5728422650a8507492f3295f430/libuv-populate-test.rule"
+		},
+		{
+			"file" : "E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/2443b5728422650a8507492f3295f430/libuv-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libuv-populate"
+		],
+		"name" : "libuv-populate"
+	}
+}

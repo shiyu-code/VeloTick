@@ -1,0 +1,3 @@
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/libuv-populate.dir
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/ALL_BUILD.dir
+E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/libuv-subbuild/CMakeFiles/ZERO_CHECK.dir
