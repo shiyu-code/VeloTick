@@ -25,8 +25,26 @@ int main() {
   int port = 8080;
   bool log_enable = false;
   std::string log_path = "logs/clean.csv";
+  size_t kline_max_1m = 5000;
+  size_t kline_max_5s = 5000;
+  size_t log_rotate_bytes = 0; // 0 表示不启用滚动
+  int log_rotate_keep = 3;
   try {
-    auto config = toml::parse("config/velotick.toml");
+    toml::value config;
+    const char* candidates[] = {
+      "config/velotick.toml",
+      "./build-msvc/Release/config/velotick.toml",
+      "./cpp/build-msvc/Release/config/velotick.toml",
+      "../config/velotick.toml"
+    };
+    bool parsed = false;
+    for (auto p : candidates) {
+      try { config = toml::parse(p); parsed = true; fmt::print("Loaded config: {}\n", p); break; } catch (...) {}
+    }
+    if (!parsed) {
+      // 再次抛出以进入默认值分支
+      throw std::runtime_error("toml::parse: file open error -> config/velotick.toml");
+    }
     auto ctp_cfg = toml::find(config, "ctp");
     instruments = toml::find<std::vector<std::string>>(ctp_cfg, "instruments");
     use_ctp = toml::find<bool>(ctp_cfg, "use_ctp");
@@ -36,6 +54,17 @@ int main() {
       auto log_cfg = toml::find(config, "log");
       try { log_enable = toml::find<bool>(log_cfg, "enable"); } catch (...) {}
       try { log_path = toml::find<std::string>(log_cfg, "path"); } catch (...) {}
+      try {
+        int rotate_mb = toml::find<int>(log_cfg, "rotate_mb");
+        if (rotate_mb > 0) log_rotate_bytes = static_cast<size_t>(rotate_mb) * 1024ULL * 1024ULL;
+      } catch (...) {}
+      try { log_rotate_keep = toml::find<int>(log_cfg, "rotate_keep"); } catch (...) {}
+    } catch (...) {}
+    // optional kline config
+    try {
+      auto kline_cfg = toml::find(config, "kline");
+      try { kline_max_1m = static_cast<size_t>(toml::find<int>(kline_cfg, "max_1m")); } catch (...) {}
+      try { kline_max_5s = static_cast<size_t>(toml::find<int>(kline_cfg, "max_5s")); } catch (...) {}
     } catch (...) {}
   } catch (const std::exception& e) {
     fmt::print("Load config failed: {}\nUsing defaults: use_ctp=false, port=8080, instruments=[\"RB2501\"]\n", e.what());
@@ -58,6 +87,10 @@ int main() {
   }
 
   TcpServer server;
+  server.set_kline_limits(kline_max_1m, kline_max_5s);
+  if (log_rotate_bytes > 0) {
+    server.set_log_rotation(log_rotate_bytes, log_rotate_keep);
+  }
   if (log_enable) {
     server.enable_log(log_path);
   }

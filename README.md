@@ -4,6 +4,9 @@
 - 轻量级实时行情网关与浏览端展示。后端用 C++ 提供 WebSocket/HTTP，前端用原生 HTML5 Canvas 绘图。
 - 默认仿真数据源（MdEngine），可选接入 CTP（桩实现预留），可嵌入 Python 做清洗/因子计算。
 
+**效果图**
+![VeloTick 效果图](velotick.png)
+
 **核心功能**
 - WebSocket 推送实时 Tick（Last/Bid/Ask、Volume、Turnover、OpenInterest、MA5）。
 - 浏览端展示：
@@ -21,6 +24,31 @@
   - `main.cpp` 读取 `config/velotick.toml`，选择引擎，启动 WS/HTTP 并泵送清洗数据。
 - 前端（`web/`）：`index.html` 页面与控制；`app.js` 订阅 WS、缓存/聚合、绘图；`styles.css` 样式。
 - 配置（`config/`）：`velotick.toml` 控制是否启用 CTP、WS 端口、订阅合约；`instruments.txt` 示例清单。
+
+**架构图**
+![VeloTick 架构图（如无法加载请见下方 Mermaid）](velotick-arch.png)
+
+```mermaid
+flowchart LR
+  subgraph Data[数据源]
+    A[MdEngine（仿真）] --> B[Raw Tick]
+    C[CTP Engine（可选）] --> B
+  end
+  subgraph Gateway[C++ 网关服务（velotick_gateway.exe）]
+    B --> D[g_raw_buffer（RingBuffer）]
+    D --> E[清洗（Python 或 C++）]
+    E --> F[g_clean_buffer]
+    F --> G[WebSocket 广播]
+    G --> H[HTTP 静态资源]
+  end
+  subgraph Frontend[浏览器前端]
+    I[index.html + app.js + Canvas]
+    G --> I
+    H --> I
+    I --> J[K线 / 分时 / 行情表]
+  end
+```
+
 
 **环境准备**
 - Windows 10/11 x64，建议 Visual Studio 2022（v143 工具链）与 CMake ≥ 3.20。

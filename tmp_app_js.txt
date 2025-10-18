@@ -16,7 +16,6 @@ const maxLatencySamples = 50;
 const chartInstEl = document.getElementById('chartInst');
 const chartInfoEl = document.getElementById('chartInfo');
 const chartCanvas = document.getElementById('chartCanvas');
-const chartTooltip = document.getElementById('chartTooltip');
 const chartCtx = chartCanvas ? chartCanvas.getContext('2d') : null;
 
 const kInstEl = document.getElementById('kInst');
@@ -31,40 +30,12 @@ const kShowMA5El = document.getElementById('kShowMA5');
 const kShowMA10El = document.getElementById('kShowMA10');
 const kShowToEl = document.getElementById('kShowTo');
 const kFollowEl = document.getElementById('kFollow');
-const kHintEl = document.getElementById('kHint');
-
-// Enforce mutual exclusivity between Volume and Turnover
-if (kShowVolEl && kShowToEl) {
-  kShowVolEl.addEventListener('change', () => {
-    if (kShowVolEl.checked) {
-      kShowToEl.checked = false;
-    }
-  });
-  kShowToEl.addEventListener('change', () => {
-    if (kShowToEl.checked) {
-      kShowVolEl.checked = false;
-    }
-  });
-  // Initial state fix: avoid both checked on load
-  if (kShowVolEl.checked && kShowToEl.checked) {
-    kShowToEl.checked = false;
-  }
-}
 
 let kVisibleN = 120; // visible bars count
 let kOffset = 0;     // right offset for panning
 let kCross = null;   // crosshair state
 let chartCross = null; // crosshair state for intraday chart
 let rafK = null, rafChart = null; // rAF schedulers for smoother redraws
-
-function requestDrawChart() {
-  if (rafChart) cancelAnimationFrame(rafChart);
-  rafChart = requestAnimationFrame(drawChart);
-}
-function requestDrawKline() {
-  if (rafK) cancelAnimationFrame(rafK);
-  rafK = requestAnimationFrame(drawKline);
-}
 
 let livePaused = false;
 let filterText = '';
@@ -84,7 +55,6 @@ const timeframes = [1000, 5000, 15000, 60000, 300000, 900000, 3600000];
 const maxKBars = 600;
 let tickCount = 0;
 let lastRateTs = Date.now();
-let didInitKlineOnce = false;
 function updateRate() {
   const now = Date.now();
   const dt = (now - lastRateTs) / 1000;
@@ -184,7 +154,7 @@ function drawChart() {
   if (!chartCtx || !chartInstEl) return;
   const inst = chartInstEl.value;
   let arr = history.get(inst) || [];
-  // å½“å†å²æ•°æ®ä¸è¶³æ—¶ï¼Œå°è¯•ä½¿ç”¨Kçº¿ä½œä¸ºå›é€€
+  // µ±ÀúÊ·Êı¾İ²»×ãÊ±£¬³¢ÊÔÊ¹ÓÃKÏß×÷Îª»ØÍË
   if (arr.length < 2 && kStore.has(inst)) {
     const tfMap = kStore.get(inst);
     const bars = tfMap.get(5000) || tfMap.get(60000) || [];
@@ -197,7 +167,7 @@ function drawChart() {
   chartCtx.clearRect(0, 0, W, H);
   if (arr.length < 2) return;
 
-  // åˆ†æ—¶å›¾ï¼šæ—¶é—´ä¸ºæ¨ªè½´ï¼Œä»·æ ¼ä¸ºçºµè½´ï¼Œæ˜¾ç¤ºåæ ‡è½´ä¸åˆ»åº¦
+  // ·ÖÊ±Í¼£ºÊ±¼äÎªºáÖá£¬¼Û¸ñÎª×İÖá£¬ÏÔÊ¾×ø±êÖáÓë¿Ì¶È
   const padL = 50, padR = 12, padT = 12, padB = 28;
   const plotW = W - padL - padR;
   const plotH = H - padT - padB;
@@ -213,26 +183,26 @@ function drawChart() {
   const toX = (ts) => padL + ((ts - minT) / (maxT - minT)) * plotW;
   const toY = (v) => padT + (1 - (v - minV) / (maxV - minV)) * plotH;
 
-  // åæ ‡è½´
+  // ×ø±êÖá
   chartCtx.save();
   chartCtx.strokeStyle = '#999';
   chartCtx.lineWidth = 1;
-  // y è½´
+  // y Öá
   chartCtx.beginPath();
   chartCtx.moveTo(padL, padT);
   chartCtx.lineTo(padL, padT + plotH);
   chartCtx.stroke();
-  // x è½´
+  // x Öá
   chartCtx.beginPath();
   chartCtx.moveTo(padL, padT + plotH);
   chartCtx.lineTo(W - padR, padT + plotH);
   chartCtx.stroke();
 
-  // åˆ»åº¦ä¸ç½‘æ ¼
+  // ¿Ì¶ÈÓëÍø¸ñ
   chartCtx.fillStyle = '#666';
   chartCtx.font = '12px sans-serif';
 
-  // y è½´åˆ»åº¦ï¼ˆä»·æ ¼ï¼‰
+  // y Öá¿Ì¶È£¨¼Û¸ñ£©
   const yTicks = 4;
   for (let i = 0; i <= yTicks; i++) {
     const val = minV + (i / yTicks) * (maxV - minV);
@@ -256,7 +226,7 @@ function drawChart() {
     chartCtx.setLineDash([]);
   }
 
-  // x è½´åˆ»åº¦ï¼ˆæ—¶é—´ï¼‰
+  // x Öá¿Ì¶È£¨Ê±¼ä£©
   const xTicks = 6;
   for (let i = 0; i <= xTicks; i++) {
     const tVal = minT + (i / xTicks) * (maxT - minT);
@@ -274,7 +244,7 @@ function drawChart() {
     chartCtx.fillText(label, x, padT + plotH + 18);
   }
 
-  // åˆ†æ—¶ä»·æ ¼çº¿
+  // ·ÖÊ±¼Û¸ñÏß
   chartCtx.strokeStyle = '#1f77b4';
   chartCtx.lineWidth = 1.5;
   chartCtx.beginPath();
@@ -445,27 +415,6 @@ function drawKline() {
   }
   kCtx.restore();
 
-  // Volume axis + single tick label
-  kCtx.save();
-  kCtx.strokeStyle = '#999';
-  kCtx.beginPath();
-  kCtx.moveTo(padL, volTop);
-  kCtx.lineTo(padL, volBottom);
-  kCtx.stroke();
-  // show one tick label for the active histogram (Volume or Turnover)
-  const wantVolAxis = kShowVolEl && kShowVolEl.checked;
-  const wantToAxis = kShowToEl && kShowToEl.checked;
-  if (wantVolAxis || wantToAxis) {
-    let volMaxLabel = 0, toMaxLabel = 0;
-    for (const b of vis) { volMaxLabel = Math.max(volMaxLabel, b.v||0); toMaxLabel = Math.max(toMaxLabel, b.to||0); }
-    kCtx.fillStyle = '#666';
-    kCtx.font = '12px sans-serif';
-    kCtx.textAlign = 'right';
-    const axisLabel = wantVolAxis ? String(Math.round(volMaxLabel)) : toMaxLabel.toFixed(2);
-    kCtx.fillText(axisLabel, padL - 6, volTop + 12);
-  }
-  kCtx.restore();
-
   // Candles
   const candleW = Math.max(3, Math.floor(plotW / vis.length * 0.6));
   for (let i = 0; i < vis.length; i++) {
@@ -545,8 +494,7 @@ function drawKline() {
       const xCenter = toX(i);
       const xLeft = xCenter - barW/2;
       if (drawVol) {
-        const up = (b.c >= b.o);
-        kCtx.fillStyle = up ? 'rgba(46,204,113,0.45)' : 'rgba(231,76,60,0.45)';
+        kCtx.fillStyle = 'rgba(52,152,219,0.45)'; // blue for Volume
         const yTop = toYVol(b.v||0);
         kCtx.fillRect(xLeft, yTop, barW, volBottom - yTop);
       }
@@ -646,10 +594,6 @@ function appendK(inst, tfms, tWall, price, volDelta, turnoverDelta, oiSnap) {
   }
 }
 
-function updateFollowHint() {
-  if (!kHintEl) return;
-  kHintEl.style.display = (kOffset > 0 && !(kFollowEl && kFollowEl.checked)) ? 'inline' : 'none';
-}
 async function loadInitialKlineForSelected() {
   const inst = kInstEl && kInstEl.value;
   if (!inst) return;
@@ -664,10 +608,11 @@ async function loadInitialKlineForSelected() {
     if (!instObj) { instObj = new Map(); kStore.set(inst, instObj); }
     instObj.set(tf, list.map(b => ({ ts: Number(b.t), o: Number(b.o), h: Number(b.h), l: Number(b.l), c: Number(b.c), v: Number(b.v||0), to: 0, oi: 0 })));
     drawKline();
-    updateFollowHint();
-    // ä¿æŒä¸åˆ†æ—¶å›¾åˆå§‹åŒ–é€»è¾‘ä¸€è‡´
+    // Ò²ÓÃÓÚ·ÖÊ±Í¼»ØÍËÊı¾İ
     if (!history.get(inst) || (history.get(inst).length < 2)) {
-      // ... existing code ...
+      const arr = list.map(b => ({ p: Number(b.c), t: Number(b.t), w: Number(b.t) }));
+      history.set(inst, arr.slice(-maxPoints));
+      drawChart();
     }
   } catch (e) {
     // ignore
@@ -730,7 +675,7 @@ function connectWs() {
       for (const tfms of timeframes) appendK(item.i, tfms, tWall, Number(item.p), volDelta, toDelta, oiSnap);
       renderOrUpdateRow(item);
       if (chartInstEl && chartInstEl.value === item.i) drawChart();
-      if (kInstEl && kInstEl.value === item.i) { if (kFollowEl && kFollowEl.checked) kOffset = 0; drawKline(); updateFollowHint(); }
+      if (kInstEl && kInstEl.value === item.i) { if (kFollowEl && kFollowEl.checked) kOffset = 0; drawKline(); }
     } catch (e) {
       const line = ev.data + '\n';
       log.textContent = line + log.textContent;
@@ -763,7 +708,7 @@ async function pollStats() {
 setInterval(pollStats, 2000);
 pollStats();
 
-// æ–°å¢ï¼šè½®è¯¢ /health ä»¥å±•ç¤ºæœåŠ¡å™¨ç‰ˆæœ¬ä¸å¥åº·çŠ¶æ€
+// ĞÂÔö£ºÂÖÑ¯ /health ÒÔÕ¹Ê¾·şÎñÆ÷°æ±¾Óë½¡¿µ×´Ì¬
 async function pollHealth() {
   try {
     const resp = await fetch('/health');
@@ -771,7 +716,7 @@ async function pollHealth() {
     if (versionEl && typeof h.version === 'string') {
       versionEl.textContent = `SrvVer: ${h.version}`;
     }
-    // å¦‚æœéœ€è¦å¯ä»¥æ ¹æ® h.status å±•ç¤ºé¢å¤–æç¤ºï¼Œè¿™é‡Œä¿æŒç®€æ´
+    // Èç¹ûĞèÒª¿ÉÒÔ¸ù¾İ h.status Õ¹Ê¾¶îÍâÌáÊ¾£¬ÕâÀï±£³Ö¼ò½à
   } catch (e) {
     // ignore
   }
@@ -796,7 +741,7 @@ async function refreshLatest() {
         tbody.appendChild(tr);
       });
     renderAllFromCache(sortBy, sortAsc);
-    // æ–°å¢ï¼šå¡«å……åˆ†æ—¶ä¸Kçº¿ä¸‹æ‹‰ã€é»˜è®¤é€‰æ‹©ç¬¬ä¸€é¡¹ã€åŒæ­¥è®¢é˜…
+    // ĞÂÔö£ºÌî³ä·ÖÊ±ÓëKÏßÏÂÀ­¡¢Ä¬ÈÏÑ¡ÔñµÚÒ»Ïî¡¢Í¬²½¶©ÔÄ
     updateChartOptions();
     updateKInstrOptions();
     if (chartInstEl && !chartInstEl.value && arr.length > 0) chartInstEl.value = arr[0].i;
@@ -835,38 +780,19 @@ filterEl.addEventListener('input', (e) => {
     const arr = history.get(inst) || [];
     if (!arr.length) return;
     const rect = chartCanvas.getBoundingClientRect();
-    const scaleX = chartCanvas.width / rect.width;
-    const scaleY = chartCanvas.height / rect.height;
-    const xCss = e.clientX - rect.left;
-    const yCss = e.clientY - rect.top;
-    const x = xCss * scaleX;
-    const y = yCss * scaleY;
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
     const W = chartCanvas.width;
-    const H = chartCanvas.height;
-    const padL = 50, padR = 12, padT = 12, padB = 28; // keep in sync with drawChart
+    const padL = 50, padR = 12; // keep in sync with drawChart
     const plotW = W - padL - padR;
-    const plotH = H - padT - padB;
     const iFloat = (x - padL) / (plotW / arr.length) - 0.5;
     const idx = Math.min(arr.length - 1, Math.max(0, Math.round(iFloat)));
     chartCross = { idx, y };
-    // Tooltip: anchor to cross intersection
-    const clampY = (yy) => Math.min(padT + plotH, Math.max(padT, yy));
-    const xCross = padL + (idx + 0.5) * (plotW / arr.length);
-    const yCross = clampY(y);
-    const xCssCross = xCross / scaleX;
-    const yCssCross = yCross / scaleY;
-    const contRect = (chartTooltip.offsetParent || document.body).getBoundingClientRect();
-    const offset = 6;
-    chartTooltip.style.left = (rect.left - contRect.left + xCssCross + offset) + 'px';
-    chartTooltip.style.top = (rect.top - contRect.top + yCssCross + offset) + 'px';
-    const pt = arr[idx];
-    const dt = new Date(Number(pt.w || pt.t));
-    chartTooltip.innerHTML = `æ—¶é—´: ${dt.toLocaleTimeString()}<br/>ä»·æ ¼: ${Number(pt.p).toFixed(2)}`;
-    chartTooltip.style.display = 'block';
     requestDrawChart();
   });
-  chartCanvas.addEventListener('mouseleave', () => { chartCross = null; if (chartTooltip) chartTooltip.style.display = 'none'; requestDrawChart(); });
+  chartCanvas.addEventListener('mouseleave', () => { chartCross = null; requestDrawChart(); });
 })();
+}
 
 (function bindKlineInteractions(){
   let dragging = false;
@@ -875,12 +801,8 @@ filterEl.addEventListener('input', (e) => {
 
   kCanvas.addEventListener('mousemove', (e) => {
     const rect = kCanvas.getBoundingClientRect();
-    const scaleX = kCanvas.width / rect.width;
-    const scaleY = kCanvas.height / rect.height;
-    const xCss = e.clientX - rect.left;
-    const yCss = e.clientY - rect.top;
-    const x = xCss * scaleX;
-    const y = yCss * scaleY;
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
     const inst = kInstEl.value;
     const tf = parseInt(kTfEl.value, 10);
     if (!inst || !kStore.has(inst)) return;
@@ -900,18 +822,8 @@ filterEl.addEventListener('input', (e) => {
     const dt = new Date(b.ts);
     const text = `${dt.toLocaleString()}\nO:${b.o.toFixed(2)} H:${b.h.toFixed(2)} L:${b.l.toFixed(2)} C:${b.c.toFixed(2)} Vol:${(b.v||0).toFixed(0)} To:${(b.to||0).toFixed(0)} OI:${(b.oi||0).toFixed(0)}`;
     kTooltip.style.display = 'block';
-    const contRect = (kTooltip.offsetParent || document.body).getBoundingClientRect();
-    const plotH = H - padT - padB;
-    const priceTop = padT;
-    const priceBottom = padT + Math.round(plotH * 0.72);
-    const clampY = (yy) => Math.min(priceBottom, Math.max(priceTop, yy));
-    const xCross = padL + (idx + 0.5) * (plotW / vis.length);
-    const yCross = clampY(y);
-    const xCssCross = xCross / scaleX;
-    const yCssCross = yCross / scaleY;
-    const offset = 6;
-    kTooltip.style.left = (rect.left - contRect.left + xCssCross + offset) + 'px';
-    kTooltip.style.top = (rect.top - contRect.top + yCssCross + offset) + 'px';
+    kTooltip.style.left = (e.clientX + 12) + 'px';
+    kTooltip.style.top = (e.clientY + 12) + 'px';
     kTooltip.textContent = text;
     if (!dragging) { kCross = { idx, y }; requestDrawKline(); }
   });
@@ -935,7 +847,6 @@ filterEl.addEventListener('input', (e) => {
       kOffset = Math.min(kOffset, maxOffset);
     }
     requestDrawKline();
-    updateFollowHint();
   }, { passive: false });
 
   kCanvas.addEventListener('mousedown', (e) => {
@@ -953,24 +864,21 @@ filterEl.addEventListener('input', (e) => {
     const tf = parseInt(kTfEl.value, 10);
     const bars = (kStore.get(inst)?.get(tf) || []);
     const maxOffset = Math.max(0, bars.length - kVisibleN);
-    const scaleX = kCanvas.width / rect.width;
-    const dxCss = e.clientX - dragStartX;
-    const dx = dxCss * scaleX;
+    const dx = e.clientX - dragStartX;
     const perBar = (W - padL - padR) / kVisibleN;
     const moveBars = Math.round(dx / perBar);
     kOffset = Math.min(maxOffset, Math.max(0, dragStartOffset - moveBars));
     requestDrawKline();
-    if (kOffset > 0 && kFollowEl && kFollowEl.checked) kFollowEl.checked = false;
-    updateFollowHint();
   });
 })();
+}
 // Reset pan/zoom on instrument/timeframe change
-kInstEl.addEventListener('change', async () => { kOffset = 0; drawKline(); if (ws && ws.readyState === WebSocket.OPEN) syncSubsFromUI(); if (!kStore.get(kInstEl.value)?.get(parseInt(kTfEl.value, 10))) await loadInitialKlineForSelected(); updateFollowHint(); });
-kTfEl.addEventListener('change', async () => { kOffset = 0; drawKline(); if (!kStore.get(kInstEl.value)?.get(parseInt(kTfEl.value, 10))) await loadInitialKlineForSelected(); updateFollowHint(); });
+kInstEl.addEventListener('change', async () => { kOffset = 0; drawKline(); if (ws && ws.readyState === WebSocket.OPEN) syncSubsFromUI(); if (!kStore.get(kInstEl.value)?.get(parseInt(kTfEl.value, 10))) await loadInitialKlineForSelected(); });
+kTfEl.addEventListener('change', async () => { kOffset = 0; drawKline(); if (!kStore.get(kInstEl.value)?.get(parseInt(kTfEl.value, 10))) await loadInitialKlineForSelected(); });
 [kShowGridEl, kShowVolEl, kShowToEl, kShowMA5El, kShowMA10El].forEach(el => el && el.addEventListener('change', drawKline));
-if (kFollowEl) kFollowEl.addEventListener('change', () => { if (kFollowEl.checked) kOffset = 0; drawKline(); updateFollowHint(); });
+if (kFollowEl) kFollowEl.addEventListener('change', () => { if (kFollowEl.checked) kOffset = 0; drawKline(); });
 
-// è®¢é˜…åŒæ­¥ï¼šæ ¹æ® UI çš„ä¸¤ä¸ªåˆçº¦ä¸‹æ‹‰æ¡†å‘åç«¯å‘é€ SUBS
+// ¶©ÔÄÍ¬²½£º¸ù¾İ UI µÄÁ½¸öºÏÔ¼ÏÂÀ­¿òÏòºó¶Ë·¢ËÍ SUBS
 function syncSubsFromUI() {
   if (!ws || ws.readyState !== WebSocket.OPEN) return;
   const set = new Set();
@@ -981,5 +889,5 @@ function syncSubsFromUI() {
   ws.send('SUBS ' + list.join(','));
 }
 
-// é¡µé¢åŠ è½½åè¿›è¡Œä¸€æ¬¡åˆå§‹åŒ–HTTPåˆ·æ–°ä¸Kçº¿æ‹‰å–
+// Ò³Ãæ¼ÓÔØºó½øĞĞÒ»´Î³õÊ¼»¯HTTPË¢ĞÂÓëKÏßÀ­È¡
 refreshLatest();

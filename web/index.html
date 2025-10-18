@@ -1,84 +1,113 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <title>VeloTick Live v2</title>
-  <link rel="stylesheet" href="/styles.css?v=20251019-1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VeloTick Monitor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; background: #f7f7f7; border-bottom: 1px solid #ddd; }
+    .status { display: inline-flex; align-items: center; gap: 8px; padding: 4px 8px; border-radius: 4px; }
+    .status-ok { background: #e6ffed; color: #046b1f; }
+    .status-warn { background: #fff9e6; color: #7a6200; }
+    .status-bad { background: #ffe6e6; color: #7a0000; }
+    main { padding: 12px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: right; }
+    th:nth-child(2), td:nth-child(2) { text-align: left; }
+    thead th { background: #fafafa; }
+    tr.updated { animation: flash 0.6s ease-in-out; }
+    @keyframes flash { from { background: #ffffe0; } to { background: #fff; } }
+    .panel { margin-top: 12px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+    .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    canvas { width: 100%; height: 260px; border: 1px solid #ccc; border-radius: 4px; }
+    #kCanvas { height: 420px; }
+    #kTooltip { position: absolute; background: rgba(255,255,255,0.95); border: 1px solid #ccc; border-radius: 4px; padding: 6px 8px; font-size: 12px; display: none; pointer-events: none; }
+    #chartTooltip { position: absolute; background: rgba(255,255,255,0.95); border: 1px solid #ccc; border-radius: 4px; padding: 6px 8px; font-size: 12px; display: none; pointer-events: none; }
+  </style>
 </head>
 <body>
-  <div id="status" class="status-bad"><span class="dot"></span><span class="text">Connecting...</span></div>
-  <div id="metrics">
-    <span id="rate" class="badge">Rate: 0 tps</span>
-    <span id="srvRate" class="badge">Srv: 0 tps</span>
-    <span id="uptime" class="badge">Uptime: 0s</span>
-    <span id="version" class="badge">SrvVer: -</span>
-    <span id="clients" class="badge">Clients: 0</span>
-    <span id="buffers" class="badge">Raw: 0 | Clean: 0</span>
-    <span id="lastUpdate" class="badge">Last: -</span>
-    <span id="latency" class="badge">Delay: n/a</span>
-  </div>
-  <div id="ctrls">
-    <label><input type="checkbox" id="pause" /> Pause live</label>
-    <label>Filter: <input type="text" id="filter" placeholder="e.g. RB" /></label>
-    <label><input type="checkbox" id="auto" /> Auto refresh (2s)</label>
-    <button id="refresh">Refresh Latest</button>
-  </div>
-  <div id="chartPanel">
-    <div class="chart-controls">
-      <label>Chart instrument:
-        <select id="chartInst"></select>
-      </label>
-      <span id="chartInfo" class="badge">Points: 0</span>
+  <header>
+    <div id="status" class="status status-warn"><span class="dot">●</span><span class="text">Connecting...</span></div>
+    <div>
+      <span id="srvRate">Srv: -</span>
+      <span id="rate">Rate: -</span>
+      <span id="latency">Delay: -</span>
+      <span id="uptime">Uptime: -</span>
+      <span id="version">SrvVer: -</span>
+      <span id="clients">Clients: -</span>
+      <span id="buffers">Raw: - | Clean: -</span>
+      <span id="lastUpdate">Last: -</span>
+      <label><input id="pause" type="checkbox" /> Pause</label>
     </div>
-    <canvas id="chartCanvas" width="900" height="220"></canvas>
-  </div>
-  <div id="klinePanel">
-    <div class="chart-controls">
-      <label>K instrument:
-        <select id="kInst"></select>
-      </label>
-      <label>Timeframe:
-        <select id="kTf">
-          <option value="1000">1s</option>
-          <option value="5000">5s</option>
-          <option value="15000">15s</option>
-          <option value="60000">1m</option>
-          <option value="300000">5m</option>
-          <option value="900000">15m</option>
-          <option value="3600000">1h</option>
-        </select>
-      </label>
-      <span id="kInfo" class="badge">Bars: 0</span>
-      <label><input type="checkbox" id="kShowGrid" checked> Grid</label>
-      <label><input type="checkbox" id="kShowVol" checked> Volume</label>
-      <label><input type="checkbox" id="kShowTo" checked> Turnover</label>
-      <label><input type="checkbox" id="kShowMA5" checked> MA5</label>
-      <label><input type="checkbox" id="kShowMA10"> MA10</label>
-      <label><input type="checkbox" id="kFollow" checked> Follow</label>
+  </header>
+  <main>
+    <div class="panel" style="position: relative;">
+      <div class="row">
+        <button id="refresh">Refresh</button>
+        <label><input id="auto" type="checkbox" /> Auto refresh</label>
+        <input id="filter" placeholder="Filter instruments (e.g., rb, IF, C, CU)" />
+      </div>
+      <table id="latestTable">
+        <thead>
+          <tr>
+            <th data-key="t">Time</th>
+            <th data-key="i">Instrument</th>
+            <th data-key="p">Last</th>
+            <th data-key="bp">Bid</th>
+            <th data-key="ap">Ask</th>
+            <th data-key="bv">BidVol</th>
+            <th data-key="av">AskVol</th>
+            <th data-key="v">Volume</th>
+            <th data-key="to">Turnover</th>
+            <th data-key="oi">OI</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <pre id="log" class="panel" style="height: 160px; overflow: auto;"></pre>
     </div>
-    <div class="kline-wrap">
-      <canvas id="kCanvas" width="900" height="260"></canvas>
+
+    <div class="panel" style="position: relative;">
+      <div class="row">
+        <label>分时：
+          <select id="chartInst"></select>
+        </label>
+        <span id="chartInfo">Points: -</span>
+      </div>
+      <canvas id="chartCanvas" width="1000" height="260"></canvas>
+      <div id="chartTooltip"></div>
+    </div>
+
+    <div class="panel" style="position: relative;">
+      <div class="row">
+        <label>K线：
+          <select id="kInst"></select>
+        </label>
+        <label>TF：
+          <select id="kTf">
+            <option value="1000">1s</option>
+            <option value="5000">5s</option>
+            <option value="15000">15s</option>
+            <option value="60000">1m</option>
+            <option value="300000">5m</option>
+            <option value="900000">15m</option>
+            <option value="3600000">60m</option>
+          </select>
+        </label>
+        <label><input id="kShowGrid" type="checkbox" checked /> Grid</label>
+        <label><input id="kShowVol" type="checkbox" checked /> Volume</label>
+        <label><input id="kShowTo" type="checkbox" /> Turnover</label>
+        <label><input id="kShowMA5" type="checkbox" /> MA5</label>
+        <label><input id="kShowMA10" type="checkbox" /> MA10</label>
+        <label><input id="kFollow" type="checkbox" checked /> Follow latest</label>
+        <span id="kInfo">Bars: -</span><span id="kHint" style="color:#b36b00; display:none; margin-left:8px;">历史视图（未跟随）</span>
+      </div>
+      <canvas id="kCanvas" width="1000" height="420"></canvas>
       <div id="kTooltip"></div>
     </div>
-  </div>
-  <table id="latestTable">
-    <thead>
-      <tr>
-        <th data-key="t">Datetime</th>
-        <th data-key="i">Instrument</th>
-        <th data-key="p">Last Price</th>
-        <th data-key="bp">Bid Price</th>
-        <th data-key="ap">Ask Price</th>
-        <th data-key="bv">Bid Volume</th>
-        <th data-key="av">Ask Volume</th>
-        <th data-key="v">Volume</th>
-        <th data-key="to">Turnover</th>
-        <th data-key="oi">Open Interest</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-  <div id="log"></div>
-  <script src="/app.js?v=20251019-8"></script>
+  </main>
+
+  <script>(function(){var s=document.createElement('script'); s.src='./app.js?v=' + Date.now(); document.body.appendChild(s);})();</script>
 </body>
 </html>

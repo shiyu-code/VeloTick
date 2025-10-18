@@ -1,8 +1,18 @@
 [log]
 # 是否开启清洗后 Tick 的 CSV 日志（默认 false）
-enable = false
+enable = true
 # 日志文件路径（相对项目根目录）
 path = "logs/clean.csv"
+# 单文件最大大小（MB），超过则自动滚动（0 表示不启用）
+rotate_mb = 10
+# 保留的滚动文件数量
+rotate_keep = 5
+
+[kline]
+# K线内存保留上限（条数）
+max_1m = 5000
+max_5s = 5000
+
 # VeloTick marker
 [ctp]
 # 是否启用CTP引擎（默认false；启用前需准备库与账号）
