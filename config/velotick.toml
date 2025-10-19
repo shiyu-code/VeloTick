@@ -7,6 +7,10 @@ path = "logs/clean.csv"
 rotate_mb = 10
 # 保留的滚动文件数量
 rotate_keep = 5
+# K线CSV路径（可选）；未设置时默认使用 path 同目录下文件
+# 可为相对或绝对路径；父目录不存在时自动创建
+kline_1m_path = "logs/ohlc_1m.csv"
+kline_5s_path = "logs/ohlc_5s.csv"
 
 [kline]
 # K线内存保留上限（条数）
@@ -28,7 +32,42 @@ instruments = ["RB2501", "HC2501"]
 [ws]
 port = 8080
 
+[http]
+# 静态资源根目录（可选）；相对或绝对路径均可
+# 未设置时使用多路径回退查找 web/ 下资源
+assets_dir = "web"
+
+# 消息总线（Kafka）配置，占位
+[kafka]
+enable = false
+brokers = "127.0.0.1:9092"
+topic_prefix = "ctp"
+
+# Redis：存最新价与小型快照
 [redis]
+enable = false
 host = "127.0.0.1"
 port = 6379
+db = 0
+key_prefix = "velotick:"
+
+# InfluxDB：存时序K线
+[influx]
+enable = false
+url = "http://127.0.0.1:8086"
+org = "my-org"
+bucket = "velotick"
+token = "your-token"
+
+# SQLite：存原始/清洗回放文件
+[sqlite]
+enable = true
+path = "data/velotick.db"
+
+# 清洗/计算层配置：python(grpc/cpp)
+[clean]
+mode = "python"
+# 当 mode = "grpc" 时有效
+grpc_addr = "127.0.0.1:50051"
+
 # VeloTick marker

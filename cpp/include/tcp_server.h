@@ -8,18 +8,16 @@
 #include <unordered_set>
 #include <string>
 #include <fstream>
+#include <memory>
 #include "tick.h"
 #include "tick_buffer.h"
+#include "backend_config.h"
+#include "bus.h"
+#include "storage.h"
+#include "candle.h"
 
 struct PerSocketData {
   std::unordered_set<std::string> subs;
-};
-
-struct Candle1m {
-  uint64_t t{0}; // bucket start timestamp in ms
-  double o{0}, h{0}, l{0}, c{0};
-  double v{0};
-  uint64_t n{0};
 };
 
 class TcpServer {
@@ -36,10 +34,14 @@ public:
   void enable_log(const std::string& path);
   void set_kline_limits(size_t max1m, size_t max5s);
   void set_log_rotation(size_t rotate_bytes, int keep_files);
+  void set_backend(const BackendConfig& cfg);
+  void set_assets_dir(const std::string& path);
+  void set_kline_log_paths(const std::string& path_1m, const std::string& path_5s);
 
 private:
   void run_app(int port);
   void pump_clean_ticks();
+  void pump_raw_ticks();
   void run_aggregator_1m();
   void run_aggregator_5s();
   void maybe_rotate(std::ofstream& f, const std::string& path, const char* header);
@@ -48,6 +50,7 @@ private:
   std::atomic<bool> running_{false};
   std::thread app_thread_;
   std::thread pump_thread_;
+  std::thread raw_pub_thread_;
   std::thread agg_thread_;
   std::thread agg5s_thread_;
 
@@ -68,8 +71,10 @@ private:
   std::atomic<bool> log_enabled_{false};
   std::ofstream log_file_;
   std::string kline_log_path_;
+  std::string kline_log_path_custom_;
   std::ofstream kline_log_file_;
   std::string kline5s_log_path_;
+  std::string kline5s_log_path_custom_;
   std::ofstream kline5s_log_file_;
   size_t rotate_bytes_{0};
   int rotate_keep_{3};
@@ -83,4 +88,12 @@ private:
 
   // Event loop pointer
   uWS::Loop* loop_{nullptr};
+
+  // Backend integrations
+  BackendConfig backend_{};
+  std::unique_ptr<IMsgBus> bus_;
+  StorageSuite storage_;
+
+  // Static assets
+  std::string assets_dir_;
 };

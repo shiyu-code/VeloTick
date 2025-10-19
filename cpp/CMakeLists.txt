@@ -15,6 +15,13 @@ include(FetchContent)
 # Build option: run without Python embedding
 option(VELO_NO_PYTHON "Build without Python embedding" ON)
 
+# 后端特性切换（占位，未来接入真实库时使用）
+option(USE_KAFKA "Enable Kafka message bus" OFF)
+option(USE_REDIS "Enable Redis storage" OFF)
+option(USE_INFLUX "Enable InfluxDB storage" OFF)
+option(USE_SQLITE "Enable SQLite recorder" OFF)
+option(USE_GRPC "Enable gRPC clean services" OFF)
+
 # Fetch dependencies
 FetchContent_Declare(pybind11
   GIT_REPOSITORY https://github.com/pybind/pybind11.git
@@ -80,6 +87,8 @@ add_executable(velotick_gateway
   src/py_bridge.cpp
   src/globals.cpp
   src/ctp_engine.cpp
+  src/bus.cpp
+  src/storage.cpp
 )
 
 target_include_directories(velotick_gateway PRIVATE
@@ -95,6 +104,23 @@ target_include_directories(velotick_gateway PRIVATE
 # Conditionally link Python embedding only when needed
 if (NOT VELO_NO_PYTHON)
   target_link_libraries(velotick_gateway PRIVATE pybind11::embed)
+endif()
+
+# 对后端切换添加编译宏（占位）
+if (USE_KAFKA)
+  target_compile_definitions(velotick_gateway PRIVATE USE_KAFKA)
+endif()
+if (USE_REDIS)
+  target_compile_definitions(velotick_gateway PRIVATE USE_REDIS)
+endif()
+if (USE_INFLUX)
+  target_compile_definitions(velotick_gateway PRIVATE USE_INFLUX)
+endif()
+if (USE_SQLITE)
+  target_compile_definitions(velotick_gateway PRIVATE USE_SQLITE)
+endif()
+if (USE_GRPC)
+  target_compile_definitions(velotick_gateway PRIVATE USE_GRPC)
 endif()
 
 target_link_libraries(velotick_gateway PRIVATE
@@ -130,4 +156,11 @@ if (VELO_USE_CTP)
   target_compile_definitions(velotick_gateway PRIVATE VELO_USE_CTP)
 endif()
 
-# VeloTick marker
+# POST_BUILD: 复制 web 与 config 到可执行文件同级目录，确保从生成目录运行可加载资源
+get_filename_component(VELO_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/.." ABSOLUTE)
+add_custom_command(TARGET velotick_gateway POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:velotick_gateway>/web"
+  COMMAND ${CMAKE_COMMAND} -E copy_directory "${VELO_ROOT}/web" "$<TARGET_FILE_DIR:velotick_gateway>/web"
+  COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:velotick_gateway>/config"
+  COMMAND ${CMAKE_COMMAND} -E copy_directory "${VELO_ROOT}/config" "$<TARGET_FILE_DIR:velotick_gateway>/config"
+)

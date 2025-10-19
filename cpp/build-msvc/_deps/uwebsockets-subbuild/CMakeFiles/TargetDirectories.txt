@@ -1,3 +1,0 @@
-E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/uwebsockets-populate.dir
-E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/ALL_BUILD.dir
-E:/05GitProject/VeloTick/VeloTick/cpp/build-msvc/_deps/uwebsockets-subbuild/CMakeFiles/ZERO_CHECK.dir

@@ -19,30 +19,112 @@ TcpServer::~TcpServer() { stop(); } // VeloTick marker
 void TcpServer::enable_log(const std::string& path) {
   try {
     log_path_ = path;
-    std::filesystem::create_directories(std::filesystem::path(path).parent_path());
+    // Path info, parent directory ensure, and disk space check for tick log
+    {
+      std::filesystem::path pp(path);
+      bool abs = pp.is_absolute();
+      fmt::print("Tick log path type: {}\n", abs ? "absolute" : "relative");
+      auto parent = pp.parent_path();
+      if (!parent.empty()) {
+        std::error_code ec;
+        std::filesystem::create_directories(parent, ec);
+        if (ec) {
+          fmt::print("Warning: cannot ensure tick log parent dir {}: {}\n", parent.string(), ec.message());
+        }
+        try {
+          auto sp = std::filesystem::space(parent);
+          auto avail_mb = sp.available / (1024ull * 1024ull);
+          fmt::print("Tick log dir available: {} MB\n", avail_mb);
+          if (avail_mb < 200ull) {
+            fmt::print("Warning: low disk space for tick logs (<200 MB)\n");
+          }
+        } catch (...) {}
+      }
+    }
+
     log_file_.open(path, std::ios::app);
     if (log_file_) {
-      log_file_ << "ts,i,p,bp,ap,bv,av,v,to,oi,MA5,wall\n";
+      // write header only if file is empty
+      try {
+        auto sz = std::filesystem::exists(path) ? std::filesystem::file_size(path) : 0ull;
+        if (sz == 0ull) {
+          log_file_ << "ts,i,p,bp,ap,bv,av,v,to,oi,MA5,wall\n";
+        }
+      } catch (...) {}
       log_enabled_.store(true);
       fmt::print("Tick logging enabled: {}\n", path);
+      if (rotate_bytes_ > 0) {
+        fmt::print("Log rotation enabled ({} bytes, keep {} files)\n", rotate_bytes_, rotate_keep_);
+      }
       // Enable K-line logging alongside tick logging
       std::filesystem::path lp(path);
-      auto kpath = (lp.parent_path() / "ohlc_1m.csv").string();
+      auto default_kpath = (lp.parent_path() / "ohlc_1m.csv").string();
+      auto default_k5spath = (lp.parent_path() / "ohlc_5s.csv").string();
+      auto kpath = kline_log_path_custom_.empty() ? default_kpath : kline_log_path_custom_;
+      auto k5spath = kline5s_log_path_custom_.empty() ? default_k5spath : kline5s_log_path_custom_;
+      if (kline_log_path_custom_.empty()) {
+        fmt::print("Kline 1m path: default ({})\n", kpath);
+      } else {
+        fmt::print("Kline 1m path: custom ({})\n", kpath);
+      }
+      if (kline5s_log_path_custom_.empty()) {
+        fmt::print("Kline 5s path: default ({})\n", k5spath);
+      } else {
+        fmt::print("Kline 5s path: custom ({})\n", k5spath);
+      }
+      // Path type and disk space info for K-line paths
+      auto printPathInfo = [](const std::string& p, const char* label) {
+        std::filesystem::path pp(p);
+        bool abs = pp.is_absolute();
+        fmt::print("{} path type: {}\n", label, abs ? "absolute" : "relative");
+        auto parent = pp.parent_path();
+        if (!parent.empty()) {
+          std::error_code ec;
+          std::filesystem::create_directories(parent, ec);
+          if (ec) {
+            fmt::print("Warning: cannot ensure {} parent dir {}: {}\n", label, parent.string(), ec.message());
+          }
+          try {
+            auto sp = std::filesystem::space(parent);
+            auto avail_mb = sp.available / (1024ull * 1024ull);
+            fmt::print("{} dir available: {} MB\n", label, avail_mb);
+            if (avail_mb < 200ull) {
+              fmt::print("Warning: low disk space for {} logs (<200 MB)\n", label);
+            }
+          } catch (...) {}
+        }
+      };
+      printPathInfo(kpath, "Kline 1m");
+      printPathInfo(k5spath, "Kline 5s");
+
       kline_log_path_ = kpath;
       kline_log_file_.open(kpath, std::ios::app);
       if (kline_log_file_) {
-        kline_log_file_ << "t_start_ms,i,o,h,l,c,v,n\n";
+        try {
+          auto ksz = std::filesystem::exists(kpath) ? std::filesystem::file_size(kpath) : 0ull;
+          if (ksz == 0ull) {
+            kline_log_file_ << "t_start_ms,i,o,h,l,c,v,n\n";
+          }
+        } catch (...) {}
         fmt::print("Kline logging enabled: {}\n", kpath);
+      } else {
+        fmt::print("Failed to open Kline 1m log file: {}\n", kpath);
       }
-      auto k5spath = (lp.parent_path() / "ohlc_5s.csv").string();
       kline5s_log_path_ = k5spath;
       kline5s_log_file_.open(k5spath, std::ios::app);
       if (kline5s_log_file_) {
-        kline5s_log_file_ << "t_start_ms,i,o,h,l,c,v,n\n";
+        try {
+          auto ksz = std::filesystem::exists(k5spath) ? std::filesystem::file_size(k5spath) : 0ull;
+          if (ksz == 0ull) {
+            kline5s_log_file_ << "t_start_ms,i,o,h,l,c,v,n\n";
+          }
+        } catch (...) {}
         fmt::print("Kline 5s logging enabled: {}\n", k5spath);
+      } else {
+        fmt::print("Failed to open Kline 5s log file: {}\n", k5spath);
       }
     } else {
-      fmt::print("Failed to open log file: {}\n", path);
+      fmt::print("Failed to open tick log file: {}\n", path);
     }
   } catch (const std::exception& e) {
     fmt::print("Log setup error: {}\n", e.what());
@@ -63,6 +145,7 @@ bool TcpServer::start(int port) {
   running_.store(true);
   app_thread_ = std::thread(&TcpServer::run_app, this, port);
   pump_thread_ = std::thread(&TcpServer::pump_clean_ticks, this);
+  raw_pub_thread_ = std::thread(&TcpServer::pump_raw_ticks, this);
   agg_thread_  = std::thread(&TcpServer::run_aggregator_1m, this);
   agg5s_thread_ = std::thread(&TcpServer::run_aggregator_5s, this);
   return true;
@@ -71,6 +154,7 @@ bool TcpServer::start(int port) {
 void TcpServer::stop() {
   if (running_.exchange(false)) {
     if (pump_thread_.joinable()) pump_thread_.join();
+    if (raw_pub_thread_.joinable()) raw_pub_thread_.join();
     if (agg_thread_.joinable()) agg_thread_.join();
     if (agg5s_thread_.joinable()) agg5s_thread_.join();
     if (app_thread_.joinable()) app_thread_.join();
@@ -136,7 +220,7 @@ void TcpServer::run_app(int port) {
   // Capture the event loop from this thread for cross-thread scheduling
   loop_ = uWS::Loop::get();
 
-  // Load external assets with multi-path fallback
+  // Load external assets with multi-path fallback (supports configurable assets_dir_)
   std::string index_html, app_js, styles_css;
   // helper: read first existing file from candidates
   auto readFileAny = [](std::initializer_list<const char*> candidates) -> std::string {
@@ -146,29 +230,66 @@ void TcpServer::run_app(int port) {
     }
     return {};
   };
+  auto readFile = [](const std::string& path) -> std::string {
+    std::ifstream in(path, std::ios::binary);
+    if (in) { std::ostringstream ss; ss << in.rdbuf(); return ss.str(); }
+    return {};
+  };
   {
-    index_html = readFileAny({
-      "web/index.html",
-      "./build-msvc/Release/web/index.html",
-      "./cpp/build-msvc/Release/web/index.html",
-      "./Release/web/index.html"
-    });
+    // index.html
+    if (!assets_dir_.empty()) {
+      auto p = (std::filesystem::path(assets_dir_) / "index.html").string();
+      index_html = readFile(p);
+      if (!index_html.empty()) {
+        fmt::print("HTTP asset: index.html loaded from {}\n", p);
+      }
+    }
+    if (index_html.empty()) {
+      index_html = readFileAny({
+        "web/index.html",
+        "./build-msvc/Release/web/index.html",
+        "./cpp/build-msvc/Release/web/index.html",
+        "./Release/web/index.html"
+      });
+    }
     if (index_html.empty()) {
       index_html = "<!doctype html><html><body><pre>index.html not found in known locations</pre></body></html>";
     }
-    app_js = readFileAny({
-      "web/app.js",
-      "./build-msvc/Release/web/app.js",
-      "./cpp/build-msvc/Release/web/app.js",
-      "./Release/web/app.js"
-    });
+
+    // app.js
+    if (!assets_dir_.empty()) {
+      auto p = (std::filesystem::path(assets_dir_) / "app.js").string();
+      app_js = readFile(p);
+      if (!app_js.empty()) {
+        fmt::print("HTTP asset: app.js loaded from {}\n", p);
+      }
+    }
+    if (app_js.empty()) {
+      app_js = readFileAny({
+        "web/app.js",
+        "./build-msvc/Release/web/app.js",
+        "./cpp/build-msvc/Release/web/app.js",
+        "./Release/web/app.js"
+      });
+    }
     if (app_js.empty()) app_js = "/* app.js not found in known locations */";
-    styles_css = readFileAny({
-      "web/styles.css",
-      "./build-msvc/Release/web/styles.css",
-      "./cpp/build-msvc/Release/web/styles.css",
-      "./Release/web/styles.css"
-    });
+
+    // styles.css
+    if (!assets_dir_.empty()) {
+      auto p = (std::filesystem::path(assets_dir_) / "styles.css").string();
+      styles_css = readFile(p);
+      if (!styles_css.empty()) {
+        fmt::print("HTTP asset: styles.css loaded from {}\n", p);
+      }
+    }
+    if (styles_css.empty()) {
+      styles_css = readFileAny({
+        "web/styles.css",
+        "./build-msvc/Release/web/styles.css",
+        "./cpp/build-msvc/Release/web/styles.css",
+        "./Release/web/styles.css"
+      });
+    }
     if (styles_css.empty()) styles_css = "/* styles.css not found in known locations */";
   }
 
@@ -422,6 +543,21 @@ void TcpServer::schedule_broadcast_inst(const std::string& inst, const std::stri
   });
 }
 
+void TcpServer::set_backend(const BackendConfig& cfg) {
+  backend_ = cfg;
+  bus_ = make_bus(backend_);
+  storage_ = make_storage(backend_);
+}
+
+void TcpServer::set_assets_dir(const std::string& path) {
+  assets_dir_ = path;
+}
+
+void TcpServer::set_kline_log_paths(const std::string& path_1m, const std::string& path_5s) {
+  kline_log_path_custom_ = path_1m;
+  kline5s_log_path_custom_ = path_5s;
+}
+
 void TcpServer::pump_clean_ticks() {
   auto cursor = g_clean_buffer.make_cursor();
   while (running_.load()) {
@@ -452,6 +588,11 @@ void TcpServer::pump_clean_ticks() {
                   << wall << '\n';
       }
 
+      // Backend fanout: bus + storage
+      if (bus_) bus_->publish_clean(*t);
+      if (storage_.redis) storage_.redis->set_latest(*t);
+      if (storage_.influx) storage_.influx->write_tick(*t);
+
       std::string json = fmt::format(R"({{"t":{},"i":"{}","p":{},"bp":{},"ap":{},"bv":{},"av":{},"v":{},"to":{},"oi":{},"MA5":{},"w":{}}})",
         t->ts, t->instrument, t->p, t->bp, t->ap, t->bv, t->av, t->v, t->to, t->oi, t->ma5, wall);
       // schedule_broadcast(json);
@@ -462,6 +603,18 @@ void TcpServer::pump_clean_ticks() {
   }
 } // VeloTick marker
 
+// Inject raw tick publisher to bus for backend consumption
+void TcpServer::pump_raw_ticks() {
+  auto cursor = g_raw_buffer.make_cursor();
+  while (running_.load()) {
+    const Tick* t = cursor.next_ptr();
+    if (t) {
+      if (bus_) bus_->publish_raw(*t);
+    } else {
+      std::this_thread::sleep_for(std::chrono::milliseconds(1));
+    }
+  }
+}
 void TcpServer::run_aggregator_1m() {
   auto cursor = g_clean_buffer.make_cursor();
   while (running_.load()) {
@@ -484,6 +637,9 @@ void TcpServer::run_aggregator_1m() {
           kline_log_file_ << cur.t << ',' << inst << ',' << cur.o << ',' << cur.h << ','
                           << cur.l << ',' << cur.c << ',' << cur.v << ',' << cur.n << '\n';
         }
+        // Persist aggregated kline
+        if (storage_.influx) storage_.influx->write_kline(cur, inst, "1m");
+        if (storage_.sqlite) storage_.sqlite->insert_kline_1m(cur, inst);
       }
       // start new minute
       cur.t = minute_ms;
@@ -507,11 +663,10 @@ void TcpServer::run_aggregator_5s() {
     const Tick* t = cursor.next_ptr();
     if (!t) { std::this_thread::sleep_for(std::chrono::milliseconds(1)); continue; }
     std::string inst(t->instrument);
-    uint64_t sec5_ms = (static_cast<uint64_t>(t->ts) / 5000ULL) * 5000ULL;
+    uint64_t bucket_ms = (static_cast<uint64_t>(t->ts) / 5000ULL) * 5000ULL;
     std::lock_guard<std::mutex> lk(mtx_);
     auto& cur = kline_building_5s_[inst];
-    if (cur.n == 0 || cur.t != sec5_ms) {
-      // finalize previous
+    if (cur.n == 0 || cur.t != bucket_ms) {
       if (cur.n > 0) {
         auto& vec = klines_5s_[inst];
         vec.push_back(cur);
@@ -521,16 +676,18 @@ void TcpServer::run_aggregator_5s() {
         if (log_enabled_.load() && kline5s_log_file_) {
           maybe_rotate(kline5s_log_file_, kline5s_log_path_, "t_start_ms,i,o,h,l,c,v,n");
           kline5s_log_file_ << cur.t << ',' << inst << ',' << cur.o << ',' << cur.h << ','
-                             << cur.l << ',' << cur.c << ',' << cur.v << ',' << cur.n << '\n';
+                            << cur.l << ',' << cur.c << ',' << cur.v << ',' << cur.n << '\n';
         }
+        // Persist aggregated kline
+        if (storage_.influx) storage_.influx->write_kline(cur, inst, "5s");
+        if (storage_.sqlite) storage_.sqlite->insert_kline_5s(cur, inst);
       }
       // start new bucket
-      cur.t = sec5_ms;
+      cur.t = bucket_ms;
       cur.o = cur.h = cur.l = cur.c = t->p;
       cur.v = t->v;
       cur.n = 1;
     } else {
-      // update current bucket
       cur.h = std::max(cur.h, t->p);
       cur.l = std::min(cur.l, t->p);
       cur.c = t->p;
@@ -550,9 +707,12 @@ void TcpServer::maybe_rotate(std::ofstream& f, const std::string& path, const ch
       auto now = std::chrono::system_clock::now();
       auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(now.time_since_epoch()).count();
       std::string rotated = path + "." + std::to_string(ms);
+      fmt::print("Rotating log: {} ({} bytes) -> {}\n", path, sz, rotated);
       std::filesystem::rename(path, rotated);
       f.open(path, std::ios::app);
-      if (f && header && *header) {
+      if (!f) {
+        fmt::print("Error: failed to reopen {} after rotation\n", path);
+      } else if (header && *header) {
         f << header << '\n';
       }
       prune_rotated(path);
@@ -580,9 +740,11 @@ void TcpServer::prune_rotated(const std::string& path) {
         return std::filesystem::last_write_time(a) < std::filesystem::last_write_time(b);
       });
       size_t to_del = files.size() - rotate_keep_;
+      size_t deleted = 0;
       for (size_t i = 0; i < to_del; ++i) {
-        try { std::filesystem::remove(files[i]); } catch (...) {}
+        try { if (std::filesystem::remove(files[i])) ++deleted; } catch (...) {}
       }
+      fmt::print("Pruned {} rotated files for {} (keep {})\n", deleted, base, rotate_keep_);
     }
   } catch (...) {
     // ignore prune errors

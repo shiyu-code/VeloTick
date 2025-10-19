@@ -1,8 +1,0 @@
-E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\context.c;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\usockets.dir\Release\context.obj
-E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\loop.c;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\usockets.dir\Release\loop.obj
-E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\socket.c;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\usockets.dir\Release\socket.obj
-E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\udp.c;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\usockets.dir\Release\udp.obj
-E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\eventing\libuv.c;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\usockets.dir\Release\libuv.obj
-E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\bsd.c;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\usockets.dir\Release\bsd.obj
-E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\crypto\openssl.c;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\usockets.dir\Release\openssl.obj
-E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\_deps\uwebsockets-src\uSockets\src\crypto\sni_tree.cpp;E:\05GitProject\VeloTick\VeloTick\cpp\build-msvc\usockets.dir\Release\sni_tree.obj
