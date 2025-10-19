@@ -5,7 +5,7 @@
 - 默认仿真数据源（MdEngine），可选接入 CTP（桩实现预留），可嵌入 Python 做清洗/因子计算。
 
 **效果图**
-![VeloTick 效果图](velotick.png)
+![效果图动图](web/效果图.gif)
 
 **核心功能**
 - WebSocket 推送实时 Tick（Last/Bid/Ask、Volume、Turnover、OpenInterest、MA5）。
